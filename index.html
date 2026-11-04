@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portofolio Aditya Saputra - Siswa Kelas XII Rekayasa Perangkat Lunak (RPL) SMK Negeri 20 Jakarta." />
+  <meta name="author" content="Aditya Saputra" />
+  <title>Aditya Saputra — Kelas XII RPL SMKN 20 Jakarta</title>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       NAVBAR
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" aria-label="Aditya Saputra">
+        <span class="brand-badge">AS</span>
+        <span class="brand-text">Aditya<span>.dev</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks" aria-label="Navigasi Utama">
+        <a href="#home" class="nav-item active">Beranda</a>
+        <a href="#about" class="nav-item">Tentang</a>
+        <a href="#skills" class="nav-item">Skill</a>
+        <a href="#projects" class="nav-item">Projek</a>
+        <a href="#education" class="nav-item">Edukasi</a>
+        <a href="#contact" class="nav-item">Kontak</a>
+      </nav>
+
+      <!-- Nav Actions (Mobile Menu Toggle) -->
+      <div class="nav-actions">
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menuToggle" class="menu-toggle" aria-label="Buka Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN CONTENT
+       ======================================================================== -->
+  <main>
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Text Intro -->
+          <div class="hero-intro fade-in">
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              <span>Kelas XII Rekayasa Perangkat Lunak • SMKN 20 Jakarta</span>
+            </div>
+
+            <h1 class="hero-name">Aditya Saputra</h1>
+            <h2 class="hero-role">Junior Web Developer &amp; Siswa RPL</h2>
+
+            <p class="hero-desc">
+              Siswa <strong>SMK Negeri 20 Jakarta</strong> jurusan <strong>Rekayasa Perangkat Lunak (Kelas XII)</strong>
+              yang memiliki minat besar di bidang teknologi dan pengembangan perangkat lunak. Terbiasa membangun website
+              fungsional, responsif, dan mudah digunakan.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">
+                <span>Lihat Proyek &amp; Karya</span>
+                <i class="fa-solid fa-arrow-down"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <span>Hubungi Saya</span>
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h3>XII RPL</h3>
+                <p>Kelas &amp; Jurusan</p>
+              </div>
+              <div class="stat-item">
+                <h3>SMKN 20</h3>
+                <p>Sekolah Kejuruan</p>
+              </div>
+              <div class="stat-item">
+                <h3>4+</h3>
+                <p>Proyek Web Selesai</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real Profile Portrait Photo -->
+          <div class="hero-visual fade-in">
+            <div class="profile-card">
+              <img src="assets/images/aditya-profile.jpg" alt="Foto Resmi Aditya Saputra - SMKN 20 Jakarta"
+                id="profileImg" />
+              <div class="profile-info">
+                <div>
+                  <h4>Aditya Saputra</h4>
+                  <p>XII RPL &bull; SMKN 20</p>
+                </div>
+                <span class="profile-tag">Web Dev</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Tentang Saya</span>
+          <h2 class="section-title">Profil &amp; Minat</h2>
+          <p class="section-desc">
+            Informasi mengenai latar belakang, motivasi, serta keterlibatan saya dalam kegiatan sekolah.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-body fade-in">
+            <p>
+              Saya adalah siswa <strong>SMK Negeri 20 Jakarta</strong> jurusan <strong>Rekayasa Perangkat Lunak</strong>
+              yang saat ini duduk di <strong>kelas XII</strong>. Saya memiliki minat besar di bidang teknologi dan
+              pengembangan perangkat lunak.
+            </p>
+            <p>
+              Saya memiliki kemampuan dasar dalam pemrograman, pembuatan website, serta penggunaan berbagai tools
+              pengembangan software. Saya juga terbiasa bekerja secara individu maupun dalam tim dan memiliki semangat
+              belajar yang tinggi untuk terus mengembangkan wawasan teknis.
+            </p>
+
+            <!-- Card Pengalaman Organisasi OSIS -->
+            <div class="leadership-box">
+              <div class="leadership-icon">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <div class="leadership-content">
+                <h4>Pengalaman Organisasi: OSIS SMKN 20 Jakarta</h4>
+                <p>
+                  Di sekolah, saya pernah aktif mengikuti organisasi OSIS dan dipercaya menjabat sebagai <strong>Ketua
+                    Seksi Bidang Tata Tertib dan Lingkungan Hidup</strong>. Melalui amanah ini, saya bertanggung jawab
+                  memimpin serta mengoordinasikan anggota seksi bidang dalam menjalankan program kerja OSIS, yang
+                  mengasah kemampuan kepemimpinan (leadership), komunikasi, kedisiplinan, dan kerja sama tim.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-facts fade-in">
+            <div class="fact-card">
+              <div class="fact-label">Nama Lengkap</div>
+              <div class="fact-value">Aditya Saputra</div>
+            </div>
+            <div class="fact-card">
+              <div class="fact-label">Sekolah &amp; Tingkat</div>
+              <div class="fact-value">SMK Negeri 20 Jakarta (Kelas XII)</div>
+            </div>
+            <div class="fact-card">
+              <div class="fact-label">Jurusan</div>
+              <div class="fact-value">Rekayasa Perangkat Lunak (RPL)</div>
+            </div>
+            <div class="fact-card">
+              <div class="fact-label">Alamat / Domisili</div>
+              <div class="fact-value" style="font-size: 0.95rem; font-weight: 500;">
+                Gg. Kirai 10, Cipete Utara, Kebayoran Baru, Jakarta Selatan
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Kemampuan</span>
+          <h2 class="section-title">Hard Skills &amp; Soft Skills</h2>
+          <p class="section-desc">
+            Kompetensi teknis dan kemampuan personal yang saya miliki dan terus kembangkan.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Hard Skills: Web & Database -->
+          <div class="skill-card fade-in">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3 class="skill-title">Hard Skills — Web &amp; Database</h3>
+            </div>
+            <div class="tech-list">
+              <div class="tech-row">
+                <div class="tech-meta">
+                  <span class="tech-name">Pemrograman Web</span>
+                  <span class="tech-level">HTML, CSS, JavaScript</span>
+                </div>
+                <p class="tech-desc">Memahami struktur semantik web, perancangan antarmuka responsif, dan logika
+                  interaksi client-side.</p>
+              </div>
+              <div class="tech-row">
+                <div class="tech-meta">
+                  <span class="tech-name">Pengelolaan Data (Database)</span>
+                  <span class="tech-level">MySQL</span>
+                </div>
+                <p class="tech-desc">Mampu merancang skema tabel data, relasi tabel, dan menjalankan operasi CRUD
+                  (Create, Read, Update, Delete).</p>
+              </div>
+              <div class="tech-row">
+                <div class="tech-meta">
+                  <span class="tech-name">Backend Framework</span>
+                  <span class="tech-level">PHP &amp; Laravel</span>
+                </div>
+                <p class="tech-desc">Mempelajari dan menerapkan arsitektur MVC, integrasi database MySQL, serta alur
+                  routing dinamis.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hard Skills: Tools & AI -->
+          <div class="skill-card fade-in">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <i class="fa-solid fa-toolbox"></i>
+              </div>
+              <h3 class="skill-title">Hard Skills — Tools &amp; AI</h3>
+            </div>
+            <div class="tech-list">
+              <div class="tech-row">
+                <div class="tech-meta">
+                  <span class="tech-name">AI Tools</span>
+                  <span class="tech-level">ChatGPT &amp; Gemini</span>
+                </div>
+                <p class="tech-desc">Memanfaatkan kecerdasan buatan secara produktif untuk riset kode, debugging error,
+                  dan eksplorasi ide.</p>
+              </div>
+              <div class="tech-row">
+                <div class="tech-meta">
+                  <span class="tech-name">Produktivitas Kantor</span>
+                  <span class="tech-level">Microsoft Office</span>
+                </div>
+                <p class="tech-desc">Penyusunan dokumen teknis, laporan kegiatan, presentasi, serta pengolahan data
+                  spreadsheet.</p>
+              </div>
+              <div class="tech-row">
+                <div class="tech-meta">
+                  <span class="tech-name">Editor &amp; Development Tools</span>
+                  <span class="tech-level">VS Code, Git</span>
+                </div>
+                <p class="tech-desc">Pengelolaan file proyek secara rapi, penggunaan ekstensi produktif, dan pelacakan
+                  riwayat kode lokal.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-card fade-in">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h3 class="skill-title">Soft Skills</h3>
+            </div>
+            <div class="tech-list">
+              <div class="tech-row">
+                <div class="tech-meta">
+                  <span class="tech-name">Manajemen Waktu</span>
+                  <span class="tech-level">Prioritas &amp; Tenggat</span>
+                </div>
+                <p class="tech-desc">Mampu mengatur prioritas tugas sekolah dan organisasi secara terencana agar selesai
+                  tepat waktu.</p>
+              </div>
+              <div class="tech-row">
+                <div class="tech-meta">
+                  <span class="tech-name">Kolaborasi / Kerja Sama Tim</span>
+                  <span class="tech-level">Harmonis &amp; Komunikatif</span>
+                </div>
+                <p class="tech-desc">Bekerja harmonis dalam tim, mendengarkan masukan, dan berkoordinasi aktif untuk
+                  mencapai tujuan bersama.</p>
+              </div>
+              <div class="tech-row">
+                <div class="tech-meta">
+                  <span class="tech-name">Problem Solving</span>
+                  <span class="tech-level">Analitis &amp; Kreatif</span>
+                </div>
+                <p class="tech-desc">Kemampuan menganalisis masalah teknis secara runut dan menemukan solusi yang
+                  efisien dan kreatif.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nilai & Karakter Kerja -->
+          <div class="skill-card fade-in">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <i class="fa-solid fa-handshake-angle"></i>
+              </div>
+              <h3 class="skill-title">Karakter &amp; Semangat Belajar</h3>
+            </div>
+            <div class="tech-list">
+              <div class="tech-row">
+                <div class="tech-meta">
+                  <span class="tech-name">Kemampuan Kepemimpinan</span>
+                  <span class="tech-level">Pengalaman OSIS</span>
+                </div>
+                <p class="tech-desc">Terlatih memimpin anggota tim, mengawal kedisiplinan, dan mengeksekusi program
+                  kerja nyata di lingkungan sekolah.</p>
+              </div>
+              <div class="tech-row">
+                <div class="tech-meta">
+                  <span class="tech-name">Semangat Belajar Tinggi</span>
+                  <span class="tech-level">Continuous Learning</span>
+                </div>
+                <p class="tech-desc">Selalu bersemangat mencoba teknologi baru dan terbuka terhadap kritik yang
+                  membangun demi peningkatan kualitas diri.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS / PENGALAMAN SECTION -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Pengalaman &amp; Proyek</span>
+          <h2 class="section-title">Karya yang Pernah Dibuat</h2>
+          <p class="section-desc">
+            Implementasi nyata pembelajaran pemrograman web, basis data, dan aplikasi interaktif yang telah saya
+            kembangkan. Pilih kategori untuk melihat proyek berdasarkan jenisnya.
+          </p>
+        </div>
+
+        <!-- Tab Filter: Web Dinamis / Web Statis -->
+        <div class="project-tabs fade-in" role="tablist" aria-label="Kategori Proyek">
+          <button type="button" class="project-tab-btn active" data-filter="dinamis" role="tab" aria-selected="true">
+            <i class="fa-solid fa-server"></i>
+            <span>Web Dinamis</span>
+            <span class="tab-count" id="count-dinamis">0</span>
+          </button>
+          <button type="button" class="project-tab-btn" data-filter="statis" role="tab" aria-selected="false">
+            <i class="fa-solid fa-file-code"></i>
+            <span>Web Statis</span>
+            <span class="tab-count" id="count-statis">0</span>
+          </button>
+        </div>
+
+        <!-- Penjelasan Kategori -->
+        <div class="project-category-info fade-in" id="category-info-box">
+          <div class="category-info-inner" id="category-dinamis-info">
+            <i class="fa-solid fa-database"></i>
+            <p><strong>Web Dinamis</strong> — Proyek dengan backend, database, dan konten yang dapat berubah secara
+              real-time berdasarkan interaksi pengguna (PHP, Laravel, MySQL).</p>
+          </div>
+          <div class="category-info-inner hidden" id="category-statis-info">
+            <i class="fa-solid fa-code"></i>
+            <p><strong>Web Statis</strong> — Proyek yang dibangun murni dengan HTML, CSS, dan JavaScript tanpa backend
+              atau database, berjalan langsung di browser.</p>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- ===== WEB DINAMIS ===== -->
+
+          <!-- Proyek 1: Website Penyewaan Alat Hiking -->
+          <article class="project-card fade-in" data-type="dinamis">
+            <div class="project-thumb">
+              <div class="project-thumb-inner project-thumb-img">
+                <img src="assets/images/proj-hiking.jpg.png"
+                  alt="Screenshot Website Penyewaan Alat Hiking - HikeTrip Rental" class="project-screenshot" />
+              </div>
+              <span class="project-type-badge dinamis">
+                <i class="fa-solid fa-server"></i> Dinamis
+              </span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-name">Website Penyewaan Alat Hiking</h3>
+              <p class="project-desc">
+                Aplikasi website penyewaan perlengkapan naik gunung dan aktivitas outdoor (tenda dome, carrier 60L,
+                sleeping bag, kompor). Dilengkapi katalog produk, pemilihan tanggal sewa, dan keranjang pemesanan.
+              </p>
+              <div class="tech-chips">
+                <span class="chip">HTML5</span>
+                <span class="chip">CSS3</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">PHP / MySQL</span>
+              </div>
+              <div class="project-btns">
+                <button type="button" class="btn btn-outline btn-sm btn-block btn-project"
+                  data-name="Website Penyewaan Alat Hiking / Naik Gunung"
+                  data-category="Web Dinamis — Rental &amp; Booking Application"
+                  data-desc="Website yang dirancang khusus untuk mempermudah para pendaki dan pecinta alam dalam menyewa peralatan naik gunung berkualitas tanpa harus membeli perlengkapan baru yang mahal. Menyediakan katalog lengkap mulai dari tenda, tas carrier, alat masak portable, hingga perlengkapan tidur dengan sistem kalkulasi sewa per hari."
+                  data-features="Katalog perlengkapan camping dan hiking lengkap dengan spesifikasi teknis|Sistem pemilihan durasi hari sewa dan tanggal pengambilan alat|Kalkulator otomatis total biaya rental berdasarkan jumlah item dan hari|Keranjang pemesanan sewa (booking cart) dan formulir verifikasi data penyewa"
+                  data-tech="HTML5 Semantik, CSS3 Modern (Flexbox &amp; Grid), JavaScript Vanilla, PHP, Database MySQL">
+                  <i class="fa-solid fa-circle-info"></i> Lihat Detail &amp; Fitur Proyek
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyek 2: Web Galeri Sekolah -->
+          <article class="project-card fade-in" data-type="dinamis">
+            <div class="project-thumb">
+              <div class="project-thumb-inner project-thumb-img">
+                <img src="assets/images/proj-galeri.jpg.png" alt="Screenshot Web Galeri Sekolah SMKN 20 Jakarta"
+                  class="project-screenshot" />
+              </div>
+              <span class="project-type-badge dinamis">
+                <i class="fa-solid fa-server"></i> Dinamis
+              </span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-name">Web Galeri Sekolah</h3>
+              <p class="project-desc">
+                Website galeri sekolah SMKN 20 Jakarta untuk mendokumentasikan kegiatan kesiswaan, kejuruan RPL, dan
+                pameran karya siswa dengan integrasi database PHP dan MySQL menggunakan Laravel.
+              </p>
+              <div class="tech-chips">
+                <span class="chip">HTML/CSS</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">Laravel</span>
+                <span class="chip">MySQL</span>
+              </div>
+              <div class="project-btns">
+                <button type="button" class="btn btn-outline btn-sm btn-block btn-project"
+                  data-name="Web Galeri Sekolah SMKN 20 Jakarta" data-category="Web Dinamis — Fullstack Web Application"
+                  data-desc="Platform galeri web sekolah interaktif yang dibangun untuk memamerkan dokumentasi kegiatan akademik, ekstrakurikuler, serta pameran hasil karya siswa jurusan Rekayasa Perangkat Lunak di SMKN 20 Jakarta."
+                  data-features="Tampilan album galeri foto kegiatan dengan pengelompokan kategori yang rapi|Struktur Blade Templating Laravel untuk pemisahan komponen halaman yang modular|Manajemen data galeri dinamis tersimpan pada basis data relasional MySQL|Tampilan antarmuka yang ramah pengguna dan adaptif di berbagai resolusi layar"
+                  data-tech="HTML5, CSS3, JavaScript, Framework Laravel, PHP, MySQL">
+                  <i class="fa-solid fa-circle-info"></i> Lihat Detail &amp; Fitur Proyek
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyek 3: Website Simulasi Bank Syariah -->
+          <article class="project-card fade-in" data-type="dinamis">
+            <div class="project-thumb">
+              <div class="project-thumb-inner project-thumb-img">
+                <img src="assets/images/proj-bank.jpeg"
+                  alt="Screenshot Website Simulasi Bank Syariah - Bank Nusantara Syariah" class="project-screenshot" />
+              </div>
+              <span class="project-type-badge dinamis">
+                <i class="fa-solid fa-server"></i> Dinamis
+              </span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-name">Website Simulasi Bank Syariah</h3>
+              <p class="project-desc">
+                Aplikasi website sistem simulasi operasional perbankan syariah, mencakup pembukuan rekening, pencatatan
+                mutasi transaksi tabungan, dan kalkulasi bagi hasil akad mudharabah.
+              </p>
+              <div class="tech-chips">
+                <span class="chip">HTML5</span>
+                <span class="chip">CSS3</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">PHP / MySQL</span>
+              </div>
+              <div class="project-btns">
+                <button type="button" class="btn btn-outline btn-sm btn-block btn-project"
+                  data-name="Website Simulasi Bank Syariah"
+                  data-category="Web Dinamis — Fintech &amp; Banking Simulation"
+                  data-desc="Aplikasi web simulasi perbankan syariah yang dibuat untuk memodelkan proses transaksi keuangan bebas riba. Mengedukasi pengguna mengenai mekanisme akad perbankan syariah khususnya akad mudharabah (bagi hasil)."
+                  data-features="Simulasi pembukaan rekening nasabah dan verifikasi data|Kalkulator otomatis perhitungan nisbah bagi hasil bulanan (Nasabah vs Bank)|Pencatatan riwayat transaksi setoran, penarikan, dan transfer dana|Tabel mutasi saldo rekening nasabah yang terhubung ke database"
+                  data-tech="HTML5, CSS3, JavaScript, PHP Native, Database MySQL">
+                  <i class="fa-solid fa-circle-info"></i> Lihat Detail &amp; Fitur Proyek
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== WEB STATIS ===== -->
+
+          <!-- Proyek 4: Personal Portfolio Website -->
+          <article class="project-card fade-in" data-type="statis">
+            <div class="project-thumb">
+              <div class="project-thumb-inner project-thumb-img">
+                <img src="assets/images/proj-portfolio.jpg.png" alt="Screenshot Personal Portfolio Website - Aditya.dev"
+                  class="project-screenshot" />
+              </div>
+              <span class="project-type-badge statis">
+                <i class="fa-solid fa-file-code"></i> Statis
+              </span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-name">Personal Portfolio Website</h3>
+              <p class="project-desc">
+                Website portofolio pribadi modern dan responsif yang dibangun menggunakan arsitektur HTML, CSS murni,
+                dan Vanilla JavaScript tanpa framework luar untuk performa maksimal.
+              </p>
+              <div class="tech-chips">
+                <span class="chip">HTML5</span>
+                <span class="chip">CSS3</span>
+                <span class="chip">Vanilla JS</span>
+              </div>
+              <div class="project-btns">
+                <button type="button" class="btn btn-outline btn-sm btn-block btn-project"
+                  data-name="Personal Portfolio Website" data-category="Web Statis — Frontend Web Portfolio"
+                  data-desc="Website portofolio pribadi statis yang Anda gunakan saat ini. Dirancang dari nol dengan pendekatan clean code tanpa bergantung pada framework besar, menghasilkan waktu muat yang instan dan tampilan profesional."
+                  data-features="Tema tampilan bersih, gelap, dan minimalis dengan animasi scroll halus|Sistem navigasi responsif dengan hamburger drawer dan smooth scrolling|Penyusunan kode terstruktur dan modular dalam berkas terpisah (HTML, CSS, JS)|Tab filter proyek interaktif untuk memisahkan kategori Web Dinamis dan Statis"
+                  data-tech="HTML5 Semantik, CSS3 Modern, Vanilla JavaScript (ES6+)">
+                  <i class="fa-solid fa-circle-info"></i> Lihat Detail &amp; Fitur Proyek
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Pesan kosong jika tidak ada proyek di kategori tersebut -->
+        <div class="projects-empty hidden" id="projects-empty">
+          <i class="fa-solid fa-folder-open"></i>
+          <p>Belum ada proyek di kategori ini.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. EDUCATION SECTION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Pendidikan</span>
+          <h2 class="section-title">Riwayat Pendidikan</h2>
+          <p class="section-desc">
+            Jejak pendidikan formal yang telah dan sedang saya tempuh.
+          </p>
+        </div>
+
+        <div class="edu-timeline fade-in">
+          <!-- 1. SMKN 20 Jakarta -->
+          <div class="timeline-entry">
+            <div class="entry-node"></div>
+            <div class="entry-card">
+              <div class="entry-header">
+                <h3 class="entry-institution">SMK Negeri 20 Jakarta</h3>
+                <span class="entry-period">2024 &ndash; 2027 (Saat Ini: Kelas XII)</span>
+              </div>
+              <div class="entry-degree">Kompetensi Keahlian: Rekayasa Perangkat Lunak (RPL)</div>
+              <p class="entry-body">
+                Mempelajari pemrograman web (HTML, CSS, JavaScript), pengelolaan basis data relasional MySQL,
+                pemrograman berbasis objek dengan PHP dan framework Laravel, analisis sistem software, serta aktif
+                menjabat sebagai Ketua Seksi Bidang di organisasi OSIS sekolah.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. SMPN 13 Jakarta -->
+          <div class="timeline-entry">
+            <div class="entry-node"></div>
+            <div class="entry-card">
+              <div class="entry-header">
+                <h3 class="entry-institution">SMPN 13 Jakarta</h3>
+                <span class="entry-period">2021 &ndash; 2024</span>
+              </div>
+              <div class="entry-degree">Pendidikan Menengah Pertama</div>
+              <p class="entry-body">
+                Menyelesaikan pendidikan menengah pertama dan mulai menemukan minat besar dalam bidang teknologi
+                informasi, komputer, serta perancangan perangkat lunak sebelum melanjutkan ke SMKN 20 Jakarta.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3. SDN Cipete Utara 011 -->
+          <div class="timeline-entry">
+            <div class="entry-node"></div>
+            <div class="entry-card">
+              <div class="entry-header">
+                <h3 class="entry-institution">SDN CIPETE UTARA 011</h3>
+                <span class="entry-period">2016 &ndash; 2021</span>
+              </div>
+              <div class="entry-degree">Pendidikan Dasar</div>
+              <p class="entry-body">
+                Menyelesaikan jenjang pendidikan dasar dengan baik sebagai fondasi awal proses belajar formal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Kontak</span>
+          <h2 class="section-title">Informasi Kontak</h2>
+          <p class="section-desc">
+            Silakan hubungi saya secara langsung melalui WhatsApp, Email, atau media sosial di bawah ini.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- WhatsApp Card -->
+          <div class="contact-card-item fade-in">
+            <div class="contact-card-top">
+              <div class="contact-card-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="contact-card-details">
+                <h3>WhatsApp / Telepon</h3>
+                <div class="contact-val">0838-7884-9317</div>
+                <p class="contact-note">Kontak utama untuk pesan langsung, respon cepat, dan diskusi.</p>
+              </div>
+            </div>
+            <div class="contact-card-bottom">
+              <a href="https://wa.me/6283878849317" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Email Card -->
+          <div class="contact-card-item fade-in">
+            <div class="contact-card-top">
+              <div class="contact-card-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="contact-card-details">
+                <h3>Alamat Email</h3>
+                <div class="contact-val">adityasaputra140209@gmail.com</div>
+                <p class="contact-note">Untuk komunikasi formal, penawaran kerja sama, atau pengiriman berkas.</p>
+              </div>
+            </div>
+            <div class="contact-card-bottom">
+              <a href="mailto:adityasaputra140209@gmail.com" class="btn btn-outline btn-sm">
+                <i class="fa-regular fa-envelope"></i> Kirim Email
+              </a>
+            </div>
+          </div>
+
+          <!-- Instagram Card -->
+          <div class="contact-card-item fade-in">
+            <div class="contact-card-top">
+              <div class="contact-card-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="contact-card-details">
+                <h3>Instagram</h3>
+                <div class="contact-val">@dityxv._</div>
+                <p class="contact-note">Profil media sosial untuk terhubung dan berinteraksi secara santai.</p>
+              </div>
+            </div>
+            <div class="contact-card-bottom">
+              <a href="https://instagram.com/dityxv._" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">
+                <i class="fa-brands fa-instagram"></i> Buka Profil Instagram
+              </a>
+            </div>
+          </div>
+
+          <!-- Alamat Card -->
+          <div class="contact-card-item fade-in">
+            <div class="contact-card-top">
+              <div class="contact-card-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-card-details">
+                <h3>Alamat Domisili</h3>
+                <div class="contact-val">Jakarta Selatan, DKI Jakarta</div>
+                <p class="contact-note">Gg kirai 10, Cipete utara, Kebayoran Baru, Jakarta Selatan.</p>
+              </div>
+            </div>
+            <div class="contact-card-bottom">
+              <span class="contact-badge-info">
+                <i class="fa-solid fa-house"></i> Domisili Resmi
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-copy">
+          &copy; <span id="yearVal"></span> <strong>Aditya Saputra</strong> &bull; Kelas XII Rekayasa Perangkat Lunak
+          SMK Negeri 20 Jakarta.
+        </div>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#education" class="footer-link">Education</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Kembali ke atas" title="Ke atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Interactive Modal for Project Detail (Tanpa GitHub Links) -->
+  <div id="projectModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Tutup">&times;</button>
+      <span class="modal-cat" id="modalCat">Kategori Proyek</span>
+      <h3 class="modal-headline" id="modalHeadline">Nama Proyek</h3>
+      <p class="modal-text" id="modalText">Deskripsi proyek.</p>
+
+      <!-- Fitur Utama Box -->
+      <div class="modal-features-box" id="modalFeaturesBox">
+        <div class="modal-features-title">
+          <i class="fa-solid fa-list-check" style="color: var(--primary-blue);"></i>
+          <span>Fitur Utama yang Dibuat:</span>
+        </div>
+        <ul class="modal-features-list" id="modalFeaturesList">
+          <!-- Diisi otomatis oleh JavaScript -->
+        </ul>
+      </div>
+
+      <div class="modal-tech-box">
+        <strong>Teknologi:</strong> <span id="modalTechList">HTML, CSS, JS</span>
+      </div>
+
+      <div class="modal-actions-row">
+        <button type="button" class="btn btn-primary btn-sm" id="modalCancelBtn">
+          <span>Tutup Penjelasan</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
